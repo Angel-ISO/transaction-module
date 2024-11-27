@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487" prefWidth="609" styleClass="bg-theme" stylesheets="@./styles/styles.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jala.university.presentation.controller.ScanQRController">
+    <top>
+        <VBox alignment="CENTER" spacing="20">
+            <padding>
+                <Insets bottom="20" top="30" />
+            </padding>
+            <Text styleClass="title-text" text="Scan ur QR Code Here" >
+                <font>
+                    <Font name="System Bold" size="21.0" />
+                </font>
+            </Text>
+            <Separator prefWidth="200" />
+        </VBox>
+    </top>
+
+    <center>
+        <VBox alignment="CENTER" spacing="20">
+            <StackPane alignment="CENTER" styleClass="qr-container">
+                <ImageView fx:id="qrImageView" fitHeight="250" fitWidth="250" preserveRatio="true" />
+            </StackPane>
+            <HBox alignment="CENTER" spacing="15">
+                <TextField fx:id="codeimput" promptText="Write your code" styleClass="modern-text-field" />
+                <Button fx:id="validateqr" styleClass="modern-button" text="Send" onAction="#validateQRCode" />
+            </HBox>
+        </VBox>
+    </center>
+
+    <padding>
+        <Insets bottom="20" left="40" right="40" top="20" />
+    </padding>
+</BorderPane>

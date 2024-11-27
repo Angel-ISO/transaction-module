@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.jala.university.presentation.controller.admin.HistoryController"
+            style="-fx-background-color: blue">
+    <center>
+        <TableView fx:id="transactionTable">
+            <columns>
+                <TableColumn fx:id="userColumn" text="Usuario" prefWidth="150"/>
+                <TableColumn text="Monto" prefWidth="100">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="amount"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn text="Descripcion" prefWidth="150">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="description"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Fecha" prefWidth="150">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="createdAt"/>
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>

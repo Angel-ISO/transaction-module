@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jala.university.presentation.controller.MainViewController">
+    <children>
+        <BorderPane prefHeight="557.0" prefWidth="809.0">
+            <left>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <children>
+                    <VBox prefHeight="481.0" prefWidth="218.0" style="-fx-background-color: #001C30;" stylesheets="@styles/styles.css">
+                        <children>
+                        <Button fx:id="navigateTohome" alignment="BASELINE_LEFT" graphicTextGap="8.0" prefHeight="65.0" prefWidth="213.0" styleClass="custom-button" text="Home">
+                            <graphic>
+                                <ImageView fitHeight="36.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../assets/analisis.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="30.0" />
+                            </padding>
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="navigateTosendMoney" alignment="BASELINE_LEFT" graphicTextGap="8.0" prefHeight="65.0" prefWidth="213.0" styleClass="custom-button" text="Send">
+                            <graphic>
+                                <ImageView fitHeight="36.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../assets/dinero.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="30.0" />
+                            </padding>
+                        </Button>
+                        <Button fx:id="navigateTomessage" alignment="BASELINE_LEFT" graphicTextGap="8.0" prefHeight="65.0" prefWidth="213.0" styleClass="custom-button" text="Message">
+                            <graphic>
+                                <ImageView fitHeight="34.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../assets/chat-de-burbujas.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="30.0" />
+                            </padding>
+                        </Button>
+                        <Button fx:id="navigateTocodeqrScan" alignment="BASELINE_LEFT" graphicTextGap="8.0" prefHeight="65.0" prefWidth="213.0" styleClass="custom-button" text="Scan QR">
+                            <graphic>
+                                <ImageView fitHeight="31.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../assets/codigo-qr.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="30.0" />
+                            </padding>
+                        </Button>
+                        <Button fx:id="navigateTosettings" alignment="BASELINE_LEFT" graphicTextGap="8.0" prefHeight="65.0" prefWidth="213.0" styleClass="custom-button" text="Settings">
+                            <graphic>
+                                <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../assets/configuraciones.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="30.0" />
+                            </padding>
+                        </Button>
+                        </children>
+                    </VBox>
+                    </children>
+                </AnchorPane>
+            </left>
+
+            <center>
+                <BorderPane fx:id="routeRenderer" layoutY="14.0" prefHeight="487.0" prefWidth="609.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            </center>
+
+            <top>
+                <Pane prefHeight="70.0" prefWidth="819.0" style="-fx-background-color: #001C35;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label layoutX="217.0" layoutY="17.0" prefHeight="37.0" prefWidth="321.0" text="Invest today, profit tomorrow" textFill="#dafffb">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="106.0" fitWidth="107.0" layoutX="14.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/icon_AVT.png" />
+                            </image>
+                        </ImageView>
+                        <Label fx:id="logOut" layoutX="705.0" layoutY="22.0" text="Log out" textAlignment="JUSTIFY" textFill="#dafffb">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../assets/log-out.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                        </Label>
+                    </children>
+                </Pane>
+            </top>
+        </BorderPane>
+    </children>
+</AnchorPane>

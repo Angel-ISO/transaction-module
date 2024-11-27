@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487" prefWidth="609" styleClass="bg-theme" stylesheets="@./styles/styles.css, @./styles/Notifications.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jala.university.presentation.controller.MessageController">
+    <top>
+        <HBox spacing="10" alignment="CENTER" styleClass="legend-container">
+            <VBox alignment="CENTER" styleClass="legend-item-sent">
+                <Label text="Sent" />
+            </VBox>
+            <VBox  alignment="CENTER" styleClass="legend-item-received">
+                <Label text="Received" />
+            </VBox>
+        </HBox>
+    </top>
+
+    <center>
+        <ScrollPane fitToWidth="true" fitToHeight="true" styleClass="scroll-pane">
+            <VBox spacing="10" fx:id="notificationsContainer" styleClass="notifications-container">
+            </VBox>
+        </ScrollPane>
+    </center>
+</BorderPane>

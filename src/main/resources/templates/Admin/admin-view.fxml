@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jala.university.presentation.controller.admin.AdminViewController">
+    <children>
+        <BorderPane prefHeight="557.0" prefWidth="809.0">
+            <left>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <VBox prefHeight="481.0" prefWidth="218.0" style="-fx-background-color: #001C30;" stylesheets="@../styles/styles.css">
+                            <children>
+                                <Button fx:id="navigateToadminHome" alignment="BASELINE_LEFT" graphicTextGap="8.0" prefHeight="65.0" prefWidth="213.0" styleClass="custom-button" text="Home">
+                                    <graphic>
+                                        <ImageView fitHeight="36.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../assets/analisis.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <padding>
+                                        <Insets left="30.0" />
+                                    </padding>
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="navigateToadminCodeqrScan" alignment="BASELINE_LEFT" graphicTextGap="8.0" prefHeight="65.0" prefWidth="213.0" styleClass="custom-button" text="DashBoard">
+                                    <graphic>
+                                        <ImageView fitHeight="67.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../assets/tablero.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <padding>
+                                        <Insets left="30.0" />
+                                    </padding>
+                                </Button>
+                                <Button fx:id="navigateToadminUser" alignment="BASELINE_LEFT" graphicTextGap="8.0" prefHeight="65.0" prefWidth="213.0" styleClass="custom-button" text="User">
+                                    <graphic>
+                                        <ImageView fitHeight="36.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../assets/agregar-usuario.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <padding>
+                                        <Insets left="30.0" />
+                                    </padding>
+                                </Button>
+                                <Button fx:id="navigateToadminhistorialTransaction" alignment="BASELINE_LEFT" graphicTextGap="8.0" prefHeight="65.0" prefWidth="213.0" styleClass="custom-button" text="Transaction History">
+                                    <graphic>
+                                        <ImageView fitHeight="41.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../assets/transaccion.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <padding>
+                                        <Insets left="30.0" />
+                                    </padding>
+                                </Button>
+                                <Button fx:id="navigateToadminMessage" alignment="BASELINE_LEFT" graphicTextGap="8.0" prefHeight="65.0" prefWidth="213.0" styleClass="custom-button" text="Fee Message">
+                                    <graphic>
+                                        <ImageView fitHeight="34.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../assets/chat-de-burbujas.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <padding>
+                                        <Insets left="30.0" />
+                                    </padding>
+                                </Button>
+                                <Button fx:id="navigateToadminSettings" alignment="BASELINE_LEFT" graphicTextGap="8.0" prefHeight="65.0" prefWidth="213.0" styleClass="custom-button" text="Settings">
+                                    <graphic>
+                                        <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../assets/configuraciones.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <padding>
+                                        <Insets left="30.0" />
+                                    </padding>
+                                </Button>
+                            </children>
+                        </VBox>
+                    </children>
+                </AnchorPane>
+            </left>
+
+            <center>
+                <BorderPane fx:id="routeRenderer" layoutY="14.0" prefHeight="487.0" prefWidth="609.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            </center>
+
+            <top>
+                <Pane prefHeight="70.0" prefWidth="819.0" style="-fx-background-color: #001C35;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label layoutX="244.0" layoutY="16.0" prefHeight="37.0" prefWidth="321.0" text="Invest today, profit tomorrow" textFill="#dafffb">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="106.0" fitWidth="107.0" layoutX="34.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../assets/icon_AVT.png" />
+                            </image>
+                        </ImageView>
+                        <Label fx:id="logOut" layoutX="650.0" layoutY="20.0" text="Log out" textAlignment="JUSTIFY" textFill="#dafffb">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../assets/log-out.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                        </Label>
+                    </children>
+                </Pane>
+            </top>
+        </BorderPane>
+    </children>
+</AnchorPane>

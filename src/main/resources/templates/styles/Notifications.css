@@ -1,0 +1,98 @@
+.scroll-pane {
+    -fx-background: #ffff;
+}
+
+.notifications-container {
+    padding: 10px;
+    -fx-alignment: top-center;
+}
+
+.notification {
+    -fx-padding: 10;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-border-width: 1;
+    -fx-border-color: #e0e0e0;
+    -fx-background-color: #f9f9f9;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 4, 0, 0, 2);
+
+    -fx-max-width: 450px;
+    -fx-alignment: center-left;
+}
+
+.notification.received {
+    -fx-border-color: #4caf50;
+    -fx-background-color: #e8f5e9;
+}
+
+.notification.sent {
+    -fx-border-color: #2196f3;
+    -fx-background-color: #e3f2fd;
+}
+
+.time {
+    -fx-font-size: 12px;
+    -fx-fill: #757575;
+    -fx-text-alignment: right;
+}
+
+.message {
+    -fx-font-size: 14px;
+    -fx-fill: #333;
+}
+
+.username {
+    -fx-font-weight: bold;
+    -fx-fill: #0056b3;
+}
+
+.amount {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-fill: #333;
+}
+
+.currency {
+    -fx-font-size: 12px;
+    -fx-fill: #757575;
+}
+
+.from, .to {
+    -fx-font-size: 12px;
+    -fx-fill: #757575;
+}
+
+
+
+.legend-container {
+    -fx-padding: 10;
+    -fx-alignment: center;
+    -fx-spacing: 20;
+}
+
+
+
+.legend-item-sent {
+    -fx-padding: 10;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 40px;
+    -fx-alignment: center;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-color: #2196f3;
+}
+
+.legend-item-received {
+    -fx-background-color: #4caf50;
+    -fx-padding: 10;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 40px;
+    -fx-alignment: center;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+

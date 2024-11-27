@@ -1,0 +1,93 @@
+/* Fondo general del formulario */
+.bg-theme {
+    -fx-background-color: #f0f2f5; /* Fondo gris claro */
+}
+
+/* Contenedor principal del formulario */
+.form-wrapper {
+    -fx-background-color: white;
+    -fx-border-radius: 12px;
+    -fx-border-color: #dcdfe6;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0.0, 0, 10);
+}
+
+/* Título principal del formulario */
+.form-title {
+    -fx-font-family: "Roboto", sans-serif;
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333; /* Gris oscuro */
+    -fx-margin-bottom: 20px;
+}
+
+
+/* Campos de texto (TextField) */
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d0d0d0; /* Gris claro */
+    -fx-border-radius: 8px;
+    -fx-border-width: 1px;
+    -fx-padding: 12px;
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial", sans-serif;
+    -fx-text-fill: #333333;
+}
+
+/* Campos de texto destacados */
+#amountField, #descriptionField, #destinationEmailField {
+    -fx-background-color: #f5f8fa; /* Azul claro */
+    -fx-border-color: #3a8dff; /* Azul brillante */
+    -fx-border-radius: 8px;
+    -fx-border-width: 1px;
+    -fx-padding: 12px;
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial", sans-serif;
+    -fx-text-fill: #333333;
+}
+
+/* Estilo del botón de enviar */
+#sendButton {
+    -fx-background-color: #3a8dff; /* Azul brillante */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-radius: 8px;
+    -fx-padding: 12px 24px;
+    -fx-font-size: 16px;
+    -fx-font-family: "Arial", sans-serif;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0.0, 0, 3);
+}
+
+/* Efecto hover para el botón */
+#sendButton:hover {
+    -fx-background-color: #337ab7; /* Azul más oscuro */
+}
+
+/* Efecto de foco en los campos de texto */
+.text-field:focused, #amountField:focused, #descriptionField:focused, #destinationEmailField:focused {
+    -fx-border-color: #0066cc; /* Azul intenso cuando se selecciona */
+    -fx-background-color: #ffffff; /* Mantener el fondo blanco */
+}
+
+/* Barra superior del formulario */
+.header-bar {
+    -fx-background-color: #3a8dff; /* Azul para la cabecera */
+    -fx-pref-height: 5px;
+    -fx-max-width: 100%;
+}
+
+/* Contenedor HBox para disposición horizontal */
+.HBox {
+    -fx-spacing: 15px;
+}
+
+/* Margen entre cada componente */
+.form-wrapper > .label, .form-wrapper > .text-field, .form-wrapper > .button {
+    -fx-spacing: 15px;
+}
+
+#currentAmount, #currencyType {
+-fx-font-size: 16px;
+    color: #000;
+}

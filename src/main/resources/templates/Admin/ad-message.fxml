@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../styles/fee-message.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jala.university.presentation.controller.admin.AdMessageController">
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <ScrollPane prefHeight="200.0" prefViewportHeight="1800.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="8000.0" prefWidth="516.0">
+                            <children>
+                                <!-- Contenedor principal de mensajes -->
+                                <VBox fx:id="containerMessage" layoutX="33.0" prefHeight="314.0" prefWidth="513.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="-30.0" AnchorPane.topAnchor="10.0">
+                                    <!-- Ejemplo de tarjeta -->
+                                    <children>
+                                        <Pane prefHeight="124.0" prefWidth="482.0" styleClass="card">
+                                            <children>
+                                                <Label layoutX="27.0" layoutY="9.0" styleClass="title" text="Título de la Comisión" />
+                                                <Label layoutX="31.0" layoutY="45.0" styleClass="description" text="Descripción detallada de la comisión." />
+                                                <Label layoutX="36.0" layoutY="92.0" styleClass="amount" text="Monto de la comisión" />
+                                                <Label layoutX="319.0" layoutY="10.0" styleClass="account" text="ID: 12345" />
+                                            </children>
+                                        </Pane>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </ScrollPane>
+            </children>
+        </AnchorPane>
+    </center>
+    <top>
+        <!-- Barra de título -->
+        <AnchorPane prefHeight="57.0" prefWidth="600.0" style="-fx-border-color: #03318b;" BorderPane.alignment="CENTER">
+            <children>
+                <Line endX="532.7" endY="0.0" layoutX="66.0" layoutY="58.0" startX="-65.99" startY="0.0" stroke="#03318c" style="-fx-stroke-width: 5px;" />
+                <Label layoutX="37.0" layoutY="18.0" prefHeight="26.0" prefWidth="162.0" text="Fee Message" textFill="#03318c">
+                    <font>
+                        <Font name="SansSerif Bold" size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </top>
+</BorderPane>

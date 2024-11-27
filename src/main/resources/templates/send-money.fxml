@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="476.0" prefWidth="607.0" styleClass="bg-theme" stylesheets="@styles/form.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jala.university.presentation.controller.SendMoneyController">
+    <center>
+        <AnchorPane fx:id="formWrapper" prefHeight="476.0" prefWidth="607.0" styleClass="form-wrapper" BorderPane.alignment="CENTER">
+            <children>
+
+                <!-- Contenedor del formulario -->
+                <AnchorPane layoutX="152.0" layoutY="105.6" prefHeight="328.0" prefWidth="310.0" style="-fx-border-radius: 10px; -fx-border-color: #0d33b3; -fx-background-color: #f5f6f7;" styleClass="form-container" AnchorPane.topAnchor="105.0">
+                    <children>
+
+                        <Label layoutX="109.0" layoutY="14.0" styleClass="label" text="Account Email">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                        <TextField fx:id="destinationEmailField" layoutX="31.0" layoutY="43.0" prefHeight="42.0" prefWidth="250.0" styleClass="text-field" />
+
+                        <Label layoutX="125.0" layoutY="90.0" styleClass="label" text="Amount">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                        <TextField fx:id="amountField" layoutX="32.0" layoutY="116.0" prefHeight="42.0" prefWidth="250.0" styleClass="text-field" />
+
+                        <Label layoutX="114.0" layoutY="164.0" styleClass="label" text="Description">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                        <TextField fx:id="descriptionField" layoutX="21.0" layoutY="189.0" prefHeight="70.0" prefWidth="276.0" styleClass="text-field" />
+
+                        <Button fx:id="sendButton" layoutX="84.0" layoutY="266.0" onAction="#createTransaction" prefHeight="31.0" prefWidth="147.0" styleClass="sendButton" text="Send Money" />
+                    </children>
+                </AnchorPane>
+                  <Label layoutX="5.0" layoutY="73.0" prefHeight="26.0" prefWidth="202.0" text="Your Current Amount is:">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+                  <HBox layoutX="185.0" layoutY="76.0" prefHeight="46.0" prefWidth="204.0" spacing="10">
+                      <children>
+                          <Label fx:id="currentAmount" text="f" />
+                          <Label fx:id="currencyType" text="" />
+                      </children>
+                  </HBox>
+            <AnchorPane layoutX="4.0" layoutY="53.0" prefHeight="6.0" prefWidth="607.0" style="-fx-background-color: #0033b3;" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="-3.0" />
+            <Label layoutX="15.0" layoutY="15.0" prefHeight="14.0" prefWidth="382.0" text="make your transfer ">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#119c24" glyphName="" selectionEnd="0" text=" " />
+               </graphic>
+            </Label>
+            <Label layoutX="410.0" layoutY="70.0" prefHeight="26.0" prefWidth="56.0" text="Status:">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="status" layoutX="459.0" layoutY="70.0" prefHeight="26.0" prefWidth="141.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="138.0" layoutY="445.0" prefHeight="18.0" prefWidth="382.0" text="You must first register your QR code to make your transaction">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            </children>
+         <BorderPane.margin>
+            <Insets top="-10.0" />
+         </BorderPane.margin>
+        </AnchorPane>
+    </center>
+   <top>
+          <!-- Barra superior -->
+          <AnchorPane maxWidth="424.0" prefHeight="126.0" prefWidth="424.0" styleClass="header-bar" BorderPane.alignment="CENTER" />
+   </top>
+</BorderPane>

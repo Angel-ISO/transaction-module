@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jala.university.presentation.controller.SettingsController">
+
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="227.0" fitWidth="220.0" layoutX="206.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assets/pato.gif" />
+                    </image>
+                </ImageView>
+                <Label layoutX="192.0" layoutY="213.0" prefHeight="42.0" prefWidth="230.0" text="Settings are comming">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="154.0" layoutY="255.0" prefHeight="26.0" prefWidth="334.0" text="If you want to set something up, ask them:">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <Label layoutX="256.0" layoutY="281.0" prefHeight="22.0" prefWidth="110.0" text="AVT Team.">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="329.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assets/loading1.gif" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </center>
+    <top>
+        <AnchorPane prefHeight="66.0" prefWidth="600.0" style="-fx-background-color: #161694;" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="TOP_LEFT" contentDisplay="RIGHT" graphicTextGap="0.0" layoutX="178.0" layoutY="14.0" prefHeight="40.0" prefWidth="356.0" text="App in progress " textFill="#f5f5fa">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="34.0" fitWidth="52.0" layoutX="367.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assets/loading2.gif" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </top>
+</BorderPane>

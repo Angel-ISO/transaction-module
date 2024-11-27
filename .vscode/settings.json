@@ -1,0 +1,6 @@
+{
+    "conventionalCommits.scopes": [
+        "TM-13: Fees accrued to the bank's master account",
+        "TM: view of the admin fee of the transacction in the account master admin"
+    ]
+}
